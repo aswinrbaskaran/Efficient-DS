@@ -1,13 +1,14 @@
 import { RouterProvider } from 'react-router';
 import { router } from './routes';
 import { ThemeProvider } from './context/ThemeContext';
-import { Analytics } from '@vercel/analytics/react';
+import { inject } from '@vercel/analytics';
+
+inject();
 
 export default function App() {
   return (
     <ThemeProvider>
       <RouterProvider router={router} />
-      <Analytics />
     </ThemeProvider>
   );
 }
