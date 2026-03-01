@@ -95,7 +95,7 @@ export function HomePage() {
         </div>
 
         <h1 style={{ fontSize: 'var(--ada-fs-4xl)', fontWeight: 'var(--ada-fw-semibold)', color: 'var(--ada-text-1)', letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: '16px', maxWidth: '640px' }}>
-          A neutral DS built to adapt with the current and scale with the future.
+          Adapt today. Scale tomorrow.
         </h1>
         <p style={{ fontSize: 'var(--ada-fs-lg)', color: 'var(--ada-text-2)', lineHeight: 1.6, maxWidth: '560px', marginBottom: '28px' }}>
           Efficient Design System is an accessibility-first, token-based design system built for AI agents, 
