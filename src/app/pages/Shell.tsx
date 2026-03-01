@@ -257,6 +257,28 @@ export function Shell() {
         <main className="flex-1 overflow-y-auto" style={{ backgroundColor: 'var(--ada-bg-base)' }}>
           <Outlet />
         </main>
+
+        {/* Footer */}
+        <footer
+          className="flex items-center justify-center px-4 py-2 border-t flex-shrink-0"
+          style={{
+            backgroundColor: 'var(--ada-surface-1)',
+            borderColor: 'var(--ada-border-default)',
+            fontSize: 'var(--ada-fs-xs)',
+            color: 'var(--ada-text-3)',
+          }}
+        >
+          © {new Date().getFullYear()} All rights reserved. Created by{' '}
+          <a
+            href="https://www.aswinbaskaran.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-1 underline transition-colors"
+            style={{ color: 'var(--ada-p-600)' }}
+          >
+            Aswin Baskaran
+          </a>
+        </footer>
       </div>
     </div>
   );
