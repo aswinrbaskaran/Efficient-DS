@@ -7,7 +7,7 @@ import {
   Command, Palette, GitBranch, Shield,
   TrendingUp, ShoppingCart, UsersRound, Kanban, BookOpen, GraduationCap,
   DollarSign, Bot, Share2, UserRound, Headphones, Key, FolderOpen,
-  Activity, ChartBar,
+  Activity, Cpu,
 } from 'lucide-react';
 import Logo from '../../imports/Logo';
 
