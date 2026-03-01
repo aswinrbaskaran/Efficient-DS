@@ -72,6 +72,7 @@ const navItems: NavItem[] = [
       { label: 'Knowledge Base', to: '/layouts/knowledge-base', icon: <BookOpen size={14} /> },
       { label: 'Learning (LMS)', to: '/layouts/lms', icon: <GraduationCap size={14} /> },
       { label: 'AI Tool Interface', to: '/layouts/ai-tool', icon: <Bot size={14} /> },
+      { label: 'Agent Interface', to: '/layouts/agent', icon: <Cpu size={14} /> },
     ],
   },
   {

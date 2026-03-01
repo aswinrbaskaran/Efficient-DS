@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import { Layers, Component, Navigation, LayoutDashboard, ArrowRight, Shield, Contrast, Keyboard, Zap, GitBranch } from 'lucide-react';
+import { Layers, Component, Navigation, LayoutDashboard, ArrowRight, Shield, Contrast, Keyboard, Zap, Bot } from 'lucide-react';
+import Logo from '../../imports/Logo';
 
 const stats = [
   { label: 'Components', value: '28+' },
@@ -37,6 +38,13 @@ const sections = [
     desc: 'Real-world layouts: enterprise dashboard, admin panel, developer IDE, settings page, and user management.',
     tags: ['Dashboard', 'Admin', 'IDE', 'Settings'],
   },
+  {
+    to: '/layouts/agent',
+    icon: <Bot size={20} />,
+    title: 'Agent Interface',
+    desc: 'Multi-agent orchestration UI with tool-use traces, agent rosters, step timelines, and execution logs — built for the agentic future.',
+    tags: ['Agents', 'Tool Use', 'Multi-Agent', 'Traces'],
+  },
 ];
 
 const principles = [
@@ -60,6 +68,11 @@ const principles = [
     title: 'Keyboard Accessible',
     desc: 'Every interactive element is fully operable via keyboard with clear focus indicators meeting WCAG 2.4.7.',
   },
+  {
+    icon: <Bot size={18} />,
+    title: 'Agent-Ready',
+    desc: 'Purpose-built patterns for AI agent UIs — tool-use traces, multi-agent orchestration, step timelines, and structured output rendering.',
+  },
 ];
 
 export function HomePage() {
@@ -68,8 +81,8 @@ export function HomePage() {
       {/* Hero */}
       <div className="mb-14">
         <div className="flex items-center gap-2 mb-6">
-          <div className="flex items-center justify-center w-10 h-10 rounded-lg" style={{ backgroundColor: 'var(--ada-p-600)' }}>
-            <GitBranch size={18} color="white" />
+          <div className="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0">
+            <Logo />
           </div>
           <div>
             <div style={{ fontSize: 'var(--ada-fs-xs)', color: 'var(--ada-text-3)', fontWeight: 'var(--ada-fw-medium)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
@@ -82,11 +95,11 @@ export function HomePage() {
         </div>
 
         <h1 style={{ fontSize: 'var(--ada-fs-4xl)', fontWeight: 'var(--ada-fw-semibold)', color: 'var(--ada-text-1)', letterSpacing: '-0.02em', lineHeight: 1.2, marginBottom: '16px', maxWidth: '640px' }}>
-          A clean, neutral design system built for developer tools.
+          A neutral DS built to adapt with the current and scale with the future.
         </h1>
         <p style={{ fontSize: 'var(--ada-fs-lg)', color: 'var(--ada-text-2)', lineHeight: 1.6, maxWidth: '560px', marginBottom: '28px' }}>
-          Efficient Design System is an accessibility-first, token-based design system for Visual Studio Code extensions, 
-          enterprise dashboards, SaaS platforms, and admin panels. Clean. Scalable. Usable.
+          Efficient Design System is an accessibility-first, token-based design system built for AI agents, 
+          enterprise dashboards, SaaS platforms, and admin panels. Adaptive. Scalable. Future-ready.
         </p>
 
         <div className="flex items-center gap-3">
@@ -220,6 +233,22 @@ export function HomePage() {
         <div style={{ fontSize: 'var(--ada-fs-xs)', color: 'var(--ada-text-4)', marginTop: '8px' }}>
           Neutral · Primary · Semantic — hover to see token names
         </div>
+      </div>
+
+      {/* Footer */}
+      <div className="mt-12 pt-6 pb-4 border-t text-center" style={{ borderColor: 'var(--ada-border-default)' }}>
+        <p style={{ fontSize: 'var(--ada-fs-xs)', color: 'var(--ada-text-4)' }}>
+          Released under the{' '}
+          <a
+            href="https://opensource.org/licenses/MIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: 'var(--ada-p-600)', textDecoration: 'underline' }}
+          >
+            MIT License
+          </a>
+          . © {new Date().getFullYear()} Efficient Design System.
+        </p>
       </div>
     </div>
   );

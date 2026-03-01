@@ -23,6 +23,7 @@ import { SupportPage } from './pages/SupportPage';
 import { PermissionsPage } from './pages/PermissionsPage';
 import { FileManagerPage } from './pages/FileManagerPage';
 import { DataMonitoringPage } from './pages/DataMonitoringPage';
+import { AgentPage } from './pages/AgentPage';
 
 export const router = createBrowserRouter([
   {
@@ -52,6 +53,7 @@ export const router = createBrowserRouter([
       { path: 'layouts/knowledge-base', Component: KnowledgeBasePage },
       { path: 'layouts/lms', Component: LMSPage },
       { path: 'layouts/ai-tool', Component: AIToolPage },
+      { path: 'layouts/agent', Component: AgentPage },
       // Operations
       { path: 'layouts/support', Component: SupportPage },
       { path: 'layouts/hr', Component: HRPortalPage },
